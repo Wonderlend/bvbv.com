@@ -1,0 +1,120 @@
+.gradient-button {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+ 
+.gradient-button:hover {
+  animation: animate 8s linear infinite;
+}
+ 
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+ 
+.gradient-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: .5s;
+}
+ 
+.gradient-button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+.nazad {
+color: gray;
+text-decoration: none;
+}
+
+.nazad:hover {
+color: black; 
+    text-shadow: red 0 0 10px; /* Свечение голубого цвета */
+    color: black;
+}
+
+.aaa {
+border-radius: 15px;
+width: 85px;
+height: 50px;
+}
+
+.aaa:hover {
+color: black; 
+    text-shadow: red 0 0 10px; /* Свечение голубого цвета */
+    color: black;
+}
+
+/*Полоса*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*Полоса*/
+
+/*Хэдер*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+
+}
+/*Хэдер*/
+
+/*Лого*/
+.logo {
+    font-size: 2em;
+    color: black;
+    user-select: none;
+}
+/*Лого*/
+
+ a {
+    color: white; /* Цвет текста */
+    text-decoration: none;
+   }
+
+a:hover {
+color: black; 
+    text-shadow: red 0 0 10px; /* Свечение голубого цвета */
+    color: black;
+}
